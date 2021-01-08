@@ -1,0 +1,28 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  background-color: white;
+  color: #999;
+  padding: 0.5em;
+  margin-top: auto;
+  font-weight: 400;
+  font-size: 14px;
+}
+footer .dev {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  footer .dev {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 503px) {
+  #dev-terms {
+    display: none;
+  }
+}

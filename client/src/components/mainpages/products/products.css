@@ -1,0 +1,138 @@
+.products {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center;
+  margin: 20px 0;
+}
+
+/* ----------- Product Item ----------------- */
+@import url("../utils/productItem/productItem.css");
+
+.delete-all {
+  text-align: right;
+  margin: 20px;
+}
+.delete-all input {
+  height: 25px;
+  width: 25px;
+  transform: translateY(5px);
+  margin: 0 15px;
+}
+.delete-all span {
+  text-transform: uppercase;
+  color: rgb(3, 165, 206);
+  letter-spacing: 1.3px;
+}
+.delete-all button {
+  border: 1px solid crimson;
+  padding: 10px 25px;
+  color: crimson;
+  text-transform: uppercase;
+}
+
+/* ------------ Filters Menu ----------------- */
+.filter_menu {
+  width: 100%;
+  min-height: 40px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 15px 0;
+  padding-left: 200px;
+}
+.filter_menu select,
+input {
+  border: 1px solid #ccc;
+  outline: none;
+  height: 40px;
+  padding: 0 5px;
+}
+.filter_menu input {
+  flex: 1;
+  margin: 0 10px;
+}
+
+/* -------------------- Load More --------------- */
+.load_more {
+  text-align: center;
+}
+.load_more button {
+  padding: 10px 25px;
+  margin-bottom: 20px;
+  border: 1px solid #555;
+  text-transform: capitalize;
+}
+
+/* -------------------- messages --------------- */
+
+.message-container-show {
+  bottom: 0;
+}
+.message-container-hide {
+  bottom: -100px;
+}
+
+.message-container {
+  transition: all 0.5s ease-out;
+  width: 30%;
+  height: 100px;
+  background-color: black;
+  color: white;
+  position: fixed;
+  left: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5px;
+}
+.message-container .svg-inline--fa {
+  width: 3em !important;
+  height: 3em;
+  margin-bottom: 10px;
+}
+.close-message {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  cursor: pointer;
+}
+.message {
+  margin-top: 6px;
+}
+
+@media (max-width: 1200px) {
+  .message-container {
+    width: 50%;
+  }
+}
+@media (max-width: 786px) {
+  .sort {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .sort select {
+    flex: 1;
+  }
+}
+
+@media (max-width: 720px) {
+  .message-container {
+    width: 100%;
+  }
+  .filter_menu {
+    padding-left: 0;
+  }
+  .message-container .svg-inline--fa {
+    width: 2em !important;
+    height: 2em;
+    margin-bottom: 10px;
+  }
+}
