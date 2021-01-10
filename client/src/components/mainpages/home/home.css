@@ -155,10 +155,13 @@ ul .thumbs-wrapper .axis-vertical {
   font-size: 14px;
   padding: 7px;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .adv1-info button a,
 .adv2-info button a {
-  width: 50%;
+  flex: 1;
   text-align: center;
   text-transform: uppercase;
   color: white;

@@ -26,6 +26,7 @@ function Header() {
   const showContactNews = pathName === "/" && isAdmin === false && !isLaptop;
   const userOk = isMobile && isLogged;
   const isAdminMobile = isAdmin && isMobile;
+  const isMobileNotAdmin = isMobile && !isAdmin;
   const logoutUser = async () => {
     await axios.get("/user/logout");
 
@@ -120,6 +121,11 @@ function Header() {
           </>
         ) : (
           ""
+        )}
+        {isMobileNotAdmin && (
+          <li onClick={() => setMenu(!menu)}>
+            <Link to="/">Home</Link>
+          </li>
         )}
 
         <li
