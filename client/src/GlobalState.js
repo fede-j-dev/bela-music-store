@@ -11,7 +11,7 @@ export const DataProvider = ({ children }) => {
   const [token, setToken] = useState(false);
   const [show, setShow] = useState(false);
   const [pathName, setPathName] = useState("");
-  const [searchAutofocus, setSearchAutofocus] = useState(true);
+  const [autofocusSearch, setAutofocusSearch] = useState(true);
 
   useEffect(() => {
     const firstLogin = localStorage.getItem("firstLogin");
@@ -34,7 +34,7 @@ export const DataProvider = ({ children }) => {
     token: [token, setToken],
     modal: [show, setShow],
     pathName: [pathName, setPathName],
-    searchAutofocus: [searchAutofocus, setSearchAutofocus],
+    autofocusSearch: [autofocusSearch, setAutofocusSearch],
     productsAPI: ProductsAPI(),
     userAPI: UserAPI(token),
     genresAPI: GenresAPI(),

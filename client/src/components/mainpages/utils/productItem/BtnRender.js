@@ -8,15 +8,15 @@ function BtnRender({ product, deleteProduct }) {
   const addCart = state.userAPI.addCart;
   const [isLogged] = state.userAPI.isLogged;
   const [show, setShow] = state.modal;
-  const [setSearchAutofocus] = state.searchAutofocus;
+  const [autofocusSearch, setAutofocusSearch] = state.autofocusSearch;
 
   const handleClickLogged = (product) => {
     //this prevents window going to the top
-    setSearchAutofocus(false);
+    setAutofocusSearch(false);
     addCart(product);
   };
   const handleClickNotLogged = () => {
-    setSearchAutofocus(false);
+    setAutofocusSearch(false);
     setShow(!show);
   };
   return (

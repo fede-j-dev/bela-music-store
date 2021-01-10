@@ -20,7 +20,6 @@ function DetailProduct() {
     succesfullyAdded,
     setSuccessfullyAdded,
   ] = state.userAPI.succesfullyAdded;
-  const [setRelatedProducts] = useState([]);
   const [detailProduct, setDetailProduct] = useState([]);
   const [pathName, setPathName] = state.pathName;
   const { pathname } = useLocation();
@@ -44,7 +43,6 @@ function DetailProduct() {
         const productOk =
           product.genre === detailProduct.genre &&
           product._id !== detailProduct._id;
-        if (productOk) setRelatedProducts(product);
       });
     }
   }, [params.id, products]);

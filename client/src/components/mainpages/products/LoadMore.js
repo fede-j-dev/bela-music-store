@@ -5,11 +5,11 @@ function LoadMore() {
   const state = useContext(GlobalState);
   const [page, setPage] = state.productsAPI.page;
   const [result] = state.productsAPI.result;
-  const [searchAutofocus, setSearchAutofocus] = state.searchAutofocus;
+  const [autofocousSearch, setAutofocusSearch] = state.autofocusSearch;
 
   const handleClick = () => {
     setPage(page + 1);
-    setSearchAutofocus(false);
+    setAutofocusSearch(false);
   };
 
   return (

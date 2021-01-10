@@ -8,7 +8,7 @@ function Filters() {
   const [genre, setGenre] = state.productsAPI.genre;
   const [sort, setSort] = state.productsAPI.sort;
   const [search, setSearch] = state.productsAPI.search;
-  const [searchAutofocus, setSearchAutofocus] = state.searchAutofocus;
+  const [autofocusSearch, setAutofocusSearch] = state.autofocusSearch;
 
   const handleGenre = (e) => {
     setGenre(e.target.value);
@@ -16,7 +16,7 @@ function Filters() {
   };
   const handleChange = (e) => {
     setSearch(e.target.value.toLowerCase());
-    setSearchAutofocus(true);
+    setAutofocusSearch(true);
   };
 
   return (
@@ -33,7 +33,7 @@ function Filters() {
         </select>
       </div>
 
-      {searchAutofocus ? (
+      {autofocusSearch ? (
         <input
           type="text"
           autoFocus
