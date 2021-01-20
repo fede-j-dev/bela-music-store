@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0adde2a5.chunk.css",
+    "main.js": "/static/js/main.278c8c6b.chunk.js",
+    "main.js.map": "/static/js/main.278c8c6b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2fd7dc15.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2fd7dc15.js.map",
+    "static/css/2.ec02d681.chunk.css": "/static/css/2.ec02d681.chunk.css",
+    "static/js/2.24f9b9ef.chunk.js": "/static/js/2.24f9b9ef.chunk.js",
+    "static/js/2.24f9b9ef.chunk.js.map": "/static/js/2.24f9b9ef.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.ec02d681.chunk.css.map": "/static/css/2.ec02d681.chunk.css.map",
+    "static/css/main.0adde2a5.chunk.css.map": "/static/css/main.0adde2a5.chunk.css.map",
+    "static/js/2.24f9b9ef.chunk.js.LICENSE.txt": "/static/js/2.24f9b9ef.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/working.db5dcc94.jpg",
+    "static/media/covid-ipad.a3fc223d.png": "/static/media/covid-ipad.a3fc223d.png",
+    "static/media/covid-lg.d28a608c.png": "/static/media/covid-lg.d28a608c.png",
+    "static/media/covid-mobile.82366a99.png": "/static/media/covid-mobile.82366a99.png",
+    "static/media/download.925df613.png": "/static/media/download.925df613.png",
+    "static/media/fullscreen-image.514ce3b9.png": "/static/media/fullscreen-image.514ce3b9.png",
+    "static/media/github.987334e9.png": "/static/media/github.987334e9.png",
+    "static/media/ipad-image.8e34c238.png": "/static/media/ipad-image.8e34c238.png",
+    "static/media/ipod-image2.572d2445.png": "/static/media/ipod-image2.572d2445.png",
+    "static/media/linkedin.4e9a46bf.png": "/static/media/linkedin.4e9a46bf.png",
+    "static/media/mysql.8b76f4ee.png": "/static/media/mysql.8b76f4ee.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2fd7dc15.js",
+    "static/css/2.ec02d681.chunk.css",
+    "static/js/2.24f9b9ef.chunk.js",
+    "static/css/main.0adde2a5.chunk.css",
+    "static/js/main.278c8c6b.chunk.js"
+  ]
+}
